@@ -2,7 +2,7 @@ javascript:(() => {
     const loadSheetJS = () => new Promise((resolve, reject) => {
         if (typeof XLSX !== 'undefined') return resolve();
         const script = document.createElement('script');
-        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js';
+        script.src = 'https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js';
         script.onload = resolve;
         script.onerror = reject;
         document.head.appendChild(script);
